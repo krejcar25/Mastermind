@@ -1,0 +1,540 @@
+﻿<Window x:Class="Mastermind.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mastermind"
+        mc:Ignorable="d"
+        Title="Mastermind" Height="600" Width="350">
+    <Grid x:Name="MainGrid" Background="#FFE2B163">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="0" Grid.Row="2" TextWrapping="NoWrap" FontSize="20" TextAlignment="Center"><Run Text="13"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="0" Grid.Row="3" TextWrapping="NoWrap" FontSize="20" TextAlignment="Center"><Run Text="12"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="0" Grid.Row="4" TextWrapping="NoWrap" FontSize="20" TextAlignment="Center"><Run Text="11"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="0" Grid.Row="5" TextWrapping="NoWrap" FontSize="20" TextAlignment="Center"><Run Text="10"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="0" Grid.Row="6" TextWrapping="NoWrap" FontSize="20" TextAlignment="Center"><Run Text="9"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="0" Grid.Row="7" TextWrapping="NoWrap" FontSize="20" TextAlignment="Center"><Run Text="8"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="0" Grid.Row="8" TextWrapping="NoWrap" FontSize="20" TextAlignment="Center"><Run Text="7"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="0" Grid.Row="9" TextWrapping="NoWrap" FontSize="20" TextAlignment="Center"><Run Text="6"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="0" Grid.Row="10" TextWrapping="NoWrap" FontSize="20" TextAlignment="Center"><Run Text="5"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="0" Grid.Row="11" TextWrapping="NoWrap" FontSize="20" TextAlignment="Center"><Run Text="4"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="0" Grid.Row="12" TextWrapping="NoWrap" FontSize="20" TextAlignment="Center"><Run Text="3"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="0" Grid.Row="13" TextWrapping="NoWrap" FontSize="20" TextAlignment="Center"><Run Text="2"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="0" Grid.Row="14" TextWrapping="NoWrap" FontSize="20" TextAlignment="Center"><Run Text="1"/></TextBlock>
+
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="point13_1" Grid.Column="0" HorizontalAlignment="Left" Margin="12,5,0,0" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point13_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="12,5,0,0" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point13_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="12,5,0,0" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point13_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="12,5,0,0" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point13_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="12,5,0,0" Stroke="Black" Height="20" VerticalAlignment="Top" Width="20"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="point12_1" Grid.Column="0" HorizontalAlignment="Left" Margin="12,5,0,0" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point12_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point12_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point12_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point12_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="point11_1" Grid.Column="0" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point11_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point11_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point11_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point11_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="5" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="point10_1" Grid.Column="0" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point10_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point10_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point10_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point10_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="6" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="point9_1" Grid.Column="0" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point9_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point9_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point9_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point9_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="7" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="point8_1" Grid.Column="0" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point8_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point8_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point8_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point8_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="8" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="point7_1" Grid.Column="0" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point7_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point7_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point7_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point7_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="9" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="point6_1" Grid.Column="0" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point6_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point6_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point6_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point6_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="10" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="point5_1" Grid.Column="0" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point5_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point5_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point5_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point5_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="11" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="point4_1" Grid.Column="0" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point4_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point4_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point4_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point4_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="12" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="point3_1" Grid.Column="0" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point3_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point3_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point3_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point3_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="13" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="point2_1" Grid.Column="0" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point2_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point2_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point2_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point2_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="14" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="point1_1" Grid.Column="0" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point1_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point1_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point1_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+            <Ellipse x:Name="point1_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="12,5,0,0" Grid.Row="14" Stroke="Black" Width="20" Height="20" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="result13_1" Grid.Column="0" HorizontalAlignment="Left" Margin="6,10,0,0" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result13_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result13_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result13_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result13_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="result12_1" Grid.Column="0" HorizontalAlignment="Left" Margin="6,10,0,0" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result12_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result12_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result12_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result12_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="result11_1" Grid.Column="0" HorizontalAlignment="Left" Margin="6,10,0,0" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result11_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result11_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result11_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result11_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="5" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="result10_1" Grid.Column="0" HorizontalAlignment="Left" Margin="6,10,0,0" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result10_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result10_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result10_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result10_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="6" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="result9_1" Grid.Column="0" HorizontalAlignment="Left" Margin="6,10,0,0" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result9_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result9_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result9_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result9_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="7" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="result8_1" Grid.Column="0" HorizontalAlignment="Left" Margin="6,10,0,0" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result8_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result8_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result8_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result8_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="8" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="result7_1" Grid.Column="0" HorizontalAlignment="Left" Margin="6,10,0,0" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result7_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result7_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result7_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result7_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="9" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="result6_1" Grid.Column="0" HorizontalAlignment="Left" Margin="6,10,0,0" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result6_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result6_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result6_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result6_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="10" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="result5_1" Grid.Column="0" HorizontalAlignment="Left" Margin="6,10,0,0" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result5_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result5_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result5_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result5_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="11" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="result4_1" Grid.Column="0" HorizontalAlignment="Left" Margin="6,10,0,0" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result4_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result4_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result4_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result4_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="12" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="result3_1" Grid.Column="0" HorizontalAlignment="Left" Margin="6,10,0,0" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result3_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result3_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result3_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result3_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="13" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="result2_1" Grid.Column="0" HorizontalAlignment="Left" Margin="6,10,0,0" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result2_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result2_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result2_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result2_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="14" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="result1_1" Grid.Column="0" HorizontalAlignment="Left" Margin="6,10,0,0" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result1_2"  Grid.Column="1" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result1_3"  Grid.Column="2" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result1_4"  Grid.Column="3" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+            <Ellipse x:Name="result1_5"  Grid.Column="4" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="14" Stroke="Black" Width="10" Height="10" VerticalAlignment="Top"/>
+        </Grid>
+        <Ellipse x:Name="newGameButton" Grid.Column="2" HorizontalAlignment="Left" Height="40" Margin="57.2,9.6,0,0" Grid.Row="15" Stroke="Black" VerticalAlignment="Top" Width="40" MouseLeftButtonDown="newGameButton_MouseLeftButtonDown"/>
+        <TextBlock x:Name="resetProgress" Grid.Column="2" HorizontalAlignment="Left" Margin="65.2,21.6,0,22.4" Grid.Row="15" TextWrapping="Wrap" Width="26" Text="New" MouseLeftButtonDown="newGameButton_MouseLeftButtonDown" VerticalAlignment="Center"/>
+        <Grid Grid.Column="1" HorizontalAlignment="Left" Height="60" Margin="0" Grid.Row="1" VerticalAlignment="Top" Width="215">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Rectangle x:Name="answer1" Margin="11.6,20" Stroke="Black" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" Height="20">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Rectangle x:Name="answer2" HorizontalAlignment="Left" Margin="11.6,20" Stroke="Black" Width="20" RenderTransformOrigin="0.5,0.5" Height="20" VerticalAlignment="Top" Grid.Column="1">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Rectangle x:Name="answer3" HorizontalAlignment="Left" Margin="11.6,20" Stroke="Black" Width="20" RenderTransformOrigin="0.5,0.5" Height="20" VerticalAlignment="Top" Grid.Column="2">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Rectangle x:Name="answer4" HorizontalAlignment="Left" Margin="11.6,20" Stroke="Black" Width="20" RenderTransformOrigin="0.5,0.5" Height="20" VerticalAlignment="Top" Grid.Column="3">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Rectangle x:Name="answer5" HorizontalAlignment="Left" Margin="11.6,20" Stroke="Black" Width="20" RenderTransformOrigin="0.5,0.5" Height="20" VerticalAlignment="Top" Grid.Column="4">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+        </Grid>
+        <Grid Grid.Column="1" HorizontalAlignment="Left" Height="60" Margin="0" Grid.Row="15" VerticalAlignment="Top" Width="215">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="colorSelector1" HorizontalAlignment="Left" Height="20" Margin="11.6,20" Stroke="Black" VerticalAlignment="Top" Width="20" MouseLeftButtonDown="colorSelector1_MouseLeftButtonDown" MouseRightButtonDown="colorSelector1_MouseRightButtonDown"/>
+            <Ellipse x:Name="colorSelector2" HorizontalAlignment="Left" Height="20" Margin="11.6,20" Stroke="Black" VerticalAlignment="Top" Width="20" Grid.Column="1" MouseLeftButtonDown="colorSelector2_MouseLeftButtonDown" MouseRightButtonDown="colorSelector2_MouseRightButtonDown"/>
+            <Ellipse x:Name="colorSelector3" Height="20" Margin="11.6,20" Stroke="Black" VerticalAlignment="Top" Grid.Column="2" HorizontalAlignment="Left" Width="20" MouseLeftButtonDown="colorSelector3_MouseLeftButtonDown" MouseRightButtonDown="colorSelector3_MouseRightButtonDown"/>
+            <Ellipse x:Name="colorSelector4" HorizontalAlignment="Left" Height="20" Margin="11.6,20" Stroke="Black" VerticalAlignment="Top" Width="20" Grid.Column="3" MouseLeftButtonDown="colorSelector4_MouseLeftButtonDown" MouseRightButtonDown="colorSelector4_MouseRightButtonDown"/>
+            <Ellipse x:Name="colorSelector5" HorizontalAlignment="Left" Height="20" Margin="11.6,20" Stroke="Black" VerticalAlignment="Top" Width="20" Grid.Column="4" MouseLeftButtonDown="colorSelector5_MouseLeftButtonDown" MouseRightButtonDown="colorSelector5_MouseRightButtonDown"/>
+        </Grid>
+        <TextBlock x:Name="timerView" Grid.Column="2" HorizontalAlignment="Left" Margin="10.2,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="87" FontSize="25" TextAlignment="Center" Text="0:00"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="0" Grid.Row="15" VerticalAlignment="Top" Width="237" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="-18,19.6,0,0" Grid.Row="15" TextWrapping="Wrap" Text="Choose" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="22" Width="57" Grid.ColumnSpan="2" TextAlignment="Center">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <Grid Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Ellipse x:Name="defColors1" Fill="#A5F4F4F5" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="23"/>
+            <Ellipse x:Name="defColors2" Fill="#A5F4F4F5" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="23" Grid.Column="1"/>
+            <Ellipse x:Name="defColors3" Fill="#A5F4F4F5" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="23" Grid.Column="2"/>
+            <Ellipse x:Name="defColors4" Fill="#A5F4F4F5" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="23" Grid.Column="3"/>
+            <Ellipse x:Name="defColors5" Fill="#A5F4F4F5" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="23" Grid.Column="4"/>
+            <Ellipse x:Name="defColors6" Fill="#A5F4F4F5" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="23" Grid.Column="5"/>
+            <Ellipse x:Name="defColors7" Fill="#A5F4F4F5" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="23" Grid.Column="6"/>
+            <Ellipse x:Name="defColors8" Fill="#A5F4F4F5" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="23" Grid.Column="7"/>
+        </Grid>
+        <Ellipse x:Name="guess" HorizontalAlignment="Left" Height="40" Stroke="Black" VerticalAlignment="Top" Width="40" MouseLeftButtonDown="guess_MouseLeftButtonDown" Fill="#FFE2B163" RenderTransformOrigin="1.035,0.73" Margin="10.2,9.726,0,0" Grid.Column="2" Grid.Row="15"/>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="17.2,21.6,0,22.4" Grid.Row="15" TextWrapping="Wrap" Width="26" MouseLeftButtonDown="guess_MouseLeftButtonDown" VerticalAlignment="Center" TextAlignment="Center" Text="Try"/>
+        <Grid x:Name="EndGameHider" Margin="0" Grid.ColumnSpan="3" Grid.RowSpan="16" Visibility="Hidden">
+            <Rectangle Fill="#A5F4F4F5"/>
+            <TextBlock Margin="10,10,10,520.4" Text="Mastermind" FontSize="28" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock x:Name="resultsBox" Margin="10,225,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="76" FontSize="18" TextAlignment="Center"><Run Text="You finished the game in "/><Run x:Name="winProp0" Text=""/><Run Text=" moves."/><LineBreak/><Run Text="It took you "/><Run x:Name="winProp1" Text=""></Run><Run Text=" minutes and "/><Run x:Name="winProp2" Text=""/><Run Text=" seconds."/><LineBreak/><Run Text="Congratulations!"/></TextBlock>
+            <Button Content="New Game" Margin="10,306,10,0" VerticalAlignment="Top" Height="31" Click="newGameButton1_Click"/>
+            <TextBlock x:Name="gameResult" HorizontalAlignment="Left" Margin="10,145,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="324" Height="47" FontSize="20" TextAlignment="Center" Foreground="#FF901D1D"/>
+        </Grid>
+        <Grid x:Name="NewGameHider" Margin="0" Grid.ColumnSpan="3" Grid.RowSpan="16">
+            <Rectangle Fill="#A5F4F4F5"/>
+            <TextBlock Margin="10,10,10,516.4" Text="Mastermind" FontSize="28" TextAlignment="Center" FontWeight="Bold"/>
+            <Button Click="newGameButton1_Click" Margin="10,271,10,0" VerticalAlignment="Top" Height="78">
+                <TextBlock TextAlignment="Center">
+                    <Run FontWeight="Bold" FontSize="15" Block.TextAlignment="Center">START</Run><LineBreak/>
+                    <Run Text="Press this button to start the timer and begin playing"/><LineBreak/>
+                    <Run Foreground="Red" Text="WARNING!"/><Run Text=" "/><Run Text="Only press when ready, you can't pause!"/>
+                </TextBlock>
+            </Button>
+            <TextBlock x:Name="textBlock" Margin="10,354,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="206" TextAlignment="Center" Background="#B2FFFFFF"><Run Text="To choose which color you want to guess hit one of the five circles to cycle through colors. Left click to go forward, right click to go back. Attempt to guess by hitting the Guess button. The game will end automatically after you win."/><LineBreak/><Run FontWeight="Bold"/><LineBreak/><Run FontWeight="Bold" Text="Just a friendly tip: "/><Run/><LineBreak/><Run Text="You can use the "/><Run FontStyle="Italic" Text="New game"/><Run Text=" button to pause the game!"/><LineBreak/><Run FontWeight="Bold"/><LineBreak/><Run FontWeight="Bold"/><LineBreak/><Run FontWeight="Bold" FontSize="15" Text="Good luck!"/></TextBlock>
+        </Grid>
+    </Grid>
+</Window>
